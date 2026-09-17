@@ -9,11 +9,32 @@ https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SkySportNow/epg.xm
 # --- 德国 ---
 https://epgshare01.online/epgshare01/epg_ripper_DE1.xml.gz
 
+# --- 美国 ---
+https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+
+# --- 澳大利亚 ---
+https://epgshare01.online/epgshare01/epg_ripper_AU1.xml.gz
+
+# --- 法国 ---
+https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz
+
+# --- 西班牙 ---
+https://epgshare01.online/epgshare01/epg_ripper_ES1.xml.gz
+
+# --- 意大利 ---
+https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz
+
+# --- 荷兰 ---
+https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz
+
+# --- 意大利 ---
+
 # --- 加拿大 ---
 https://epgshare01.online/epgshare01/epg_ripper_CA2.xml.gz
 
 # --- 中文 ---
 https://epg.112114.xyz/pp.xml
+https://epg.v1.mk/fy.xml
 
 # --- 想加的国家往下写,例如: ---
 # https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz
