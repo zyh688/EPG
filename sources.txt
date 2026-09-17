@@ -1,0 +1,21 @@
+# 每行一个 EPG 链接,# 开头是注释
+# 越靠前优先级越高:同一个频道 ID 在多个源里出现时,以靠前的源为准
+# 加新国家前,建议先用浏览器打开链接确认不是 404
+
+# --- 英国(含天空体育) ---
+https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz
+https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SkySportNow/epg.xml
+
+# --- 德国 ---
+https://epgshare01.online/epgshare01/epg_ripper_DE1.xml.gz
+
+# --- 加拿大 ---
+https://epgshare01.online/epgshare01/epg_ripper_CA2.xml.gz
+
+# --- 中文 ---
+https://epg.112114.xyz/pp.xml
+
+# --- 想加的国家往下写,例如: ---
+# https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz
+# https://epgshare01.online/epgshare01/epg_ripper_ES1.xml.gz
+# https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz

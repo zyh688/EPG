@@ -1,0 +1,56 @@
+name: 合并 EPG
+
+# ---- 什么时候跑 ----
+on:
+  schedule:
+    # cron 用的是 UTC 时间。'0 20 * * *' = 每天 UTC 20:00 = 北京时间次日 04:00
+    # 五个字段依次是:分 时 日 月 星期
+    - cron: '0 20 * * *'
+  workflow_dispatch:     # 允许在网页上手动点按钮运行,调试时很有用
+  push:
+    paths:
+      - 'sources.txt'    # 改了源列表就立刻重跑一次
+
+# 发布到 Pages 需要写权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同一时间只跑一个,避免定时任务和手动触发撞车
+concurrency:
+  group: epg-merge
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: 拉取仓库代码
+        uses: actions/checkout@v4
+
+      - name: 准备 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 执行合并
+        run: python merge_epg.py
+
+      - name: 打包待发布的文件
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: merge
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 发布到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
