@@ -44,6 +44,8 @@ https://epg.v1.mk/fy.xml
 http://178.195.11.131:7778/xmltv/xteve.xml
 https://github.com/iwinstar/epg_merge_filter/releases/download/latest/merged_epg.xml.gz
 http://tv.kinte.net/xmltv/threadfin.xml
+# --- passwd ---
+http://iptv.852851.xyz/sub/bwQfdMcUYrjq/epg.xml.gz
 
 # --- 想加的国家往下写,例如: ---
 # https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz
