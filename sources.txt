@@ -27,7 +27,11 @@ https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz
 # --- 荷兰 ---
 https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz
 
-# --- 意大利 ---
+# --- 波兰 ---
+https://epgshare01.online/epgshare01/epg_ripper_PL1.xml.gz
+
+# --- 新西兰 ---
+https://epgshare01.online/epgshare01/epg_ripper_NZ1.xml.gz
 
 # --- 加拿大 ---
 https://epgshare01.online/epgshare01/epg_ripper_CA2.xml.gz
